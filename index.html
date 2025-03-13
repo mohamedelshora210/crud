@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+<body>
+
+
+
+
+    
+
+    <div class="container my-5">
+
+        <label for=""> ProductName :</label>
+        <input type="text" id="productName" class="form-control my-3" placeholder="ProductName">
+ 
+        
+        <label for=""> ProductPrice :</label>
+        <input type="number" id="productPrice" class="form-control my-3" placeholder="ProductPrice">
+
+        
+        <label for=""> ProductCategory :</label>
+        <input type="text" id="productCategory" class="form-control my-3" placeholder="ProductCategory">
+
+        
+        <label for=""> ProductDesc :</label>
+        <textarea id="productDesc" class="form-control my-3" placeholder="ProductDesc"></textarea>
+
+        <button id="buttonProduct"  class="btn btn-success p-2 mt-2">Add Product</button>
+
+        <div class="w-50 m-auto py-5">
+            <input onkeyup="searchProduct(this.value)" class="form-control" placeholder="Search With Name..">
+
+            <div class="w-100 py-2" id="SearchResult"></div>
+        </div>
+    </div>
+
+    <div class="container my-3">
+        <table class="table text-center">
+
+            <thead>
+                <th>Number</th>
+                <th>ProductName</th>
+                <th>ProductPrice</th>
+                <th>ProductCategory</th>
+                <th>ProductDesc</th>
+                <th>Update</th>
+                <th>Delete</th>
+            </thead>
+            <tbody id="tableBody">
+
+            </tbody>
+        </table>
+
+
+    </div> 
+
+    <!-- js -->
+    <script src="js/all.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
